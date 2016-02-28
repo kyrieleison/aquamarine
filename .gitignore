@@ -1,0 +1,27 @@
+# for ios
+.DS_store
+
+# for vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# for node
+node_modules/
+
+# for bower
+bower_components
+.bower-cache/
+.bower-registry/
+.bower-tmp/
+
+# for sass
+.sass-cache/
+
+# for ruby, rails
+/.bundle
+/vendor/bundle/
+/vendor/bundler/
