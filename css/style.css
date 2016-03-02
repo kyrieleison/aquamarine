@@ -1,62 +1,387 @@
-/*
-Error: File to import not found or unreadable: object/project/index.
-       Load path: /Users/yuka.sato/Workspace/app/aquamarine/scss
-        on line 39 of scss/style.scss
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+html {
+  box-sizing: border-box; }
 
-34: 
-35: // -----------------------------------------------------------------
-36: // Project
-37: // -----------------------------------------------------------------
-38: 
-39: @import "object/project/index";
-40: 
-41: // -----------------------------------------------------------------
-42: // Utility
-43: // -----------------------------------------------------------------
+*, *::after, *::before {
+  box-sizing: inherit; }
 
-Backtrace:
-scss/style.scss:39
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:45:in `import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:28:in `imported_file'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:37:in `css_import?'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `call'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: object/project/index.\A        Load path: /Users/yuka.sato/Workspace/app/aquamarine/scss\A         on line 39 of scss/style.scss\A \A 34: \A 35: // -----------------------------------------------------------------\A 36: // Project\A 37: // -----------------------------------------------------------------\A 38: \A 39: @import \"object/project/index\";\A 40: \A 41: // -----------------------------------------------------------------\A 42: // Utility\A 43: // -----------------------------------------------------------------"; }
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Sans Japanese', serif;
+  font-size: 14px;
+  font-weight: 200; }
+
+.icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga'; }
+  .icon--xs {
+    font-size: 18px; }
+  .icon--sm {
+    font-size: 24px; }
+  .icon--md {
+    font-size: 36px; }
+  .icon--lg {
+    font-size: 48px; }
+  .icon--dark {
+    color: rgba(0, 0, 0, 0.54); }
+  .icon--dark-inactive {
+    color: rgba(0, 0, 0, 0.26); }
+  .icon--light {
+    color: white; }
+  .icon--light-inactive {
+    color: rgba(255, 255, 255, 0.3); }
+
+.sidebar {
+  width: 200px;
+  height: 100%;
+  background: #D2C9C4;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transform: translateX(-200px);
+  -moz-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  -o-transform: translateX(-200px);
+  transform: translateX(-200px);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  .sidebar-trigger {
+    display: none; }
+    .sidebar-trigger:checked ~ .sidebar {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+
+    .sidebar-trigger:checked ~ .sidebar-caller {
+      -webkit-transform: translateX(200px);
+      -moz-transform: translateX(200px);
+      -ms-transform: translateX(200px);
+      -o-transform: translateX(200px);
+      transform: translateX(200px);
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      width: -webkit-calc(100vw - 200px);
+      width: calc(100vw - 200px); }
+
+    .sidebar-trigger__pointer {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #fff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999; }
+      .sidebar-trigger__pointer-icon {
+        position: absolute;
+        top: calc(50% - 12px);
+        left: calc(50% - 12px);
+        cursor: pointer; }
+
+      .sidebar-trigger__pointer:hover {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        transition-duration: 0.3s; }
+
+  .sidebar-caller {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+
+.profile {
+  text-align: center; }
+  .profile__image {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    background: #D2C9C4;
+    width: 100px;
+    height: 100px;
+    margin: 38px auto 0 auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+    .profile__image:hover {
+      cursor: pointer;
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+  .profile__name {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 20px; }
+  .profile__job {
+    font-size: 0.8rem;
+    font-weight: 200;
+    line-height: 2rem; }
+  .profile .profile-actions {
+    margin-top: 33px; }
+    .profile .profile-actions__btn {
+      display: block;
+      width: 120px;
+      height: 30px;
+      margin: 0 auto 10px;
+      background: none;
+      border: 1px solid #AA8670;
+      border-radius: 15px;
+      font-size: .9rem;
+      font-weight: 400;
+      -webkit-transition: all, 0.3s, ease-in-out, 0s;
+      -moz-transition: all, 0.3s, ease-in-out, 0s;
+      transition: all, 0.3s, ease-in-out, 0s; }
+      .profile .profile-actions__btn:hover {
+        background: #AA8670;
+        color: #fff; }
+
+.headline {
+  transform: translate(-50%, -50%);
+  color: #fff;
+  min-width: 50%;
+  padding: 30px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 3px solid white;
+  border-top: none; }
+  .headline__subtitle, .headline__title {
+    letter-spacing: 0.05em; }
+  .headline__title {
+    font-size: 65px;
+    font-family: "Montserrat";
+    text-transform: uppercase; }
+  .headline__subtitle {
+    transform: translate(0, -50%);
+    font-family: "Noto Sans";
+    font-weight: italic;
+    font-size: 21px;
+    overflow: hidden;
+    margin: -30px -33px 0 -33px;
+    position: absolute;
+    width: calc( 100% + 6px ); }
+  .headline__subtitle:before, .headline__subtitle:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    margin-top: -2px;
+    border-top: 3px solid white;
+    top: 50%; }
+  .headline__subtitle:before {
+    transform: translate(-100%, 0);
+    margin-left: -30px; }
+  .headline__subtitle:after {
+    margin-left: 30px; }
+
+.hexa {
+  position: relative;
+  display: inline-block;
+  margin: 5px 21.75px;
+  background: #0776A7;
+  text-align: center;
+  -webkit-transition: all, 0.2s, ease-in-out, 0s;
+  -moz-transition: all, 0.2s, ease-in-out, 0s;
+  transition: all, 0.2s, ease-in-out, 0s; }
+  .hexa, .hexa::before, .hexa::after {
+    width: 67px;
+    height: 116.044px;
+    border-radius: 20% / 5%; }
+  .hexa::before {
+    background: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg); }
+  .hexa::after {
+    background: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg); }
+  .hexa:nth-child(even) {
+    top: 60.522px; }
+  .hexa:hover {
+    background: #555; }
+  .hexa__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 140%;
+    overflow: hidden;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    z-index: 100;
+    color: #fff; }
+  .hexa.is_incline {
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg); }
+  .hexa.is_incline .hexa__text {
+    -webkit-transform: translate(-50%, -50%) rotate(30deg);
+    -moz-transform: translate(-50%, -50%) rotate(30deg);
+    -ms-transform: translate(-50%, -50%) rotate(30deg);
+    -o-transform: translate(-50%, -50%) rotate(30deg);
+    transform: translate(-50%, -50%) rotate(30deg); }
+
+.container {
+  padding: 100px;
+  background: #0776A7;
+  width: 100vw;
+  margin: 0 auto;
+  height: 500%;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

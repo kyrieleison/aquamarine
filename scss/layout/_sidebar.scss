@@ -33,19 +33,20 @@ $sidebar-background-color: #D2C9C4;
           background: #fff;
           width: 50px;
           height: 50px;
-          border: 1px solid #000;
           border-radius: 50%;
           cursor: pointer;
           z-index: 9999;
-          .sidebar-trigger__pointer-icon {
-            position: absolute;
-            top: calc(50% - 12px);
-            left: calc(50% - 12px);
-            cursor: pointer;
-          }
-          .sidebar-trigger__pointer:hover {
-            @include transform(rotate(-180deg));
-            @include transition-duration(0.3s);
+          @at-root {
+            .sidebar-trigger__pointer-icon {
+              position: absolute;
+              top: calc(50% - 12px);
+              left: calc(50% - 12px);
+              cursor: pointer;
+            }
+            .sidebar-trigger__pointer:hover {
+              @include transform(rotate(-180deg));
+              @include transition-duration(0.3s);
+            }
           }
         }
       }
