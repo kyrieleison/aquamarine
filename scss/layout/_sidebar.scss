@@ -1,0 +1,63 @@
+$sidebar-width: 200px;
+$sidebar-background-color: #D2C9C4;
+
+.sidebar {
+  width: $sidebar-width;
+  height: 100%;
+  background: $sidebar-background-color;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  @include transform(translateX(-$sidebar-width));
+  @include transition-duration(0.3s);
+  @at-root {
+    .sidebar-trigger {
+      display: none;
+      @at-root {
+        .sidebar-trigger:checked ~ .sidebar {
+          @include transform(translateX(0));
+          @include transition-duration(0.3s);
+        }
+        .sidebar-trigger:checked  ~ .sidebar-caller {
+          @include transform(translateX($sidebar-width));
+          @include transition-duration(0.3s);
+          @include calc(width, "100vw - #{$sidebar-width}")
+        }
+        .sidebar-trigger__pointer {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background: #fff;
+          width: 50px;
+          height: 50px;
+          border: 1px solid #000;
+          border-radius: 50%;
+          cursor: pointer;
+          z-index: 9999;
+          .sidebar-trigger__pointer-icon {
+            position: absolute;
+            top: calc(50% - 12px);
+            left: calc(50% - 12px);
+            cursor: pointer;
+          }
+          .sidebar-trigger__pointer:hover {
+            @include transform(rotate(-180deg));
+            @include transition-duration(0.3s);
+          }
+        }
+      }
+    }
+    .sidebar-caller {
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      @include transform(translateX(0));
+      @include transition-duration(0.3s);
+    }
+  }
+}
+

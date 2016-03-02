@@ -1,0 +1,52 @@
+$profile-background-color: #D2C9C4;
+$profile-btn-color: #AA8670;
+
+.profile {
+  text-align: center;
+  &__image {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    background: $profile-background-color;
+    width: 100px;
+    height: 100px;
+    margin: 38px auto 0 auto;
+    @include filter(grayscale(100%));
+    @include transition-duration(0.3s);
+    &:hover {
+      cursor: pointer;
+      @include filter(grayscale(0%));
+      @include transition-duration(0.3s);
+    }
+  }
+  &__name {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 20px;
+  }
+  &__job {
+    font-size: 0.8rem;
+    font-weight: 200;
+    line-height: 2rem;
+  }
+  .profile-actions {
+    margin-top: 33px;
+    &__btn {
+      display: block;
+      width: 120px;
+      height: 30px;
+      margin: 0 auto 10px;
+      background: none;
+      border: 1px solid $profile-btn-color;
+      border-radius: 15px;
+      font-size: .9rem;
+      font-weight: 400;
+      @include transition(all, 0.3s, ease-in-out, 0s);
+      &:hover {
+        background: $profile-btn-color;
+        color: #fff;
+      }
+    }
+  }
+}
+

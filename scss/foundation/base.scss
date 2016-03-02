@@ -3,6 +3,20 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Sans Japanese', serif;
+  font-size: 14px;
+  font-weight: 200;
+}
+
 .icon {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -19,19 +33,29 @@
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  font-family: 'Noto Sans Japanese', serif;
-  font-size: 14px;
-  font-weight: 200;
+  &--xs {
+    font-size: 18px;
+  }
+  &--sm {
+    font-size: 24px;
+  }
+  &--md {
+    font-size: 36px;
+  }
+  &--lg {
+    font-size: 48px;
+  }
+  &--dark {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  &--dark-inactive {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  &--light {
+    color: rgba(255, 255, 255, 1);
+  }
+  &--light-inactive {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 

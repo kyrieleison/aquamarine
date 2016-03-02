@@ -1,0 +1,60 @@
+$hexa-width: 67px;
+$hexa-height: $hexa-width * 1.732;
+$hexa-margin-top-bottom: 5px;
+$hexa-margin-right-left: ($hexa-width * 0.25) + $hexa-margin-top-bottom;
+$hexa-top: ($hexa-height + $hexa-margin-top-bottom) * 0.5;
+$hexa-color: #0776A7;
+$hexa-color-hover: #555;
+$hexa-text-color: #fff;
+
+.hexa {
+  position: relative;
+  display: inline-block;
+  margin: $hexa-margin-top-bottom $hexa-margin-right-left;
+  background: $hexa-color;
+  text-align: center;
+  @include transition(all, 0.2s, ease-in-out, 0s);
+  &, &::before, &::after {
+    width: $hexa-width;
+    height: $hexa-height;
+    border-radius: 20% / 5%;
+  }
+  &::before {
+    background: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    @include transform(rotate(-60deg));
+  }
+  &::after {
+    background: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    @include transform(rotate(60deg));
+  }
+  &:nth-child(even) {
+    top: $hexa-top;
+  }
+  &:hover {
+    background: $hexa-color-hover;
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+    width: 140%;
+    overflow: hidden;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    z-index: 100;
+    color: $hexa-text-color;
+  }
+  &.is_incline {
+    @include transform(rotate(-30deg));
+  }
+  &.is_incline &__text {
+    @include transform(translate(-50%, -50%) rotate(30deg));
+  }
+}

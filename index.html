@@ -14,48 +14,53 @@
   </head>
   <body>
 
-    <input type="checkbox" id="menu-trigger" class="menu-trigger" />
-    <div class="menu">
-      <ul class="menu-nav">
-        <li class="menu-nav__item--active"><a href="#">Home</a></li>
-        <li class="menu-nav__item"><a href="#">About</a></li>
-        <li class="menu-nav__item"><a href="#">Contact</a></li>
-        <div class="hexa">
-          <span class="hexa__text">HEXAGON</span>
+    <input class="sidebar-trigger" type="checkbox" id="sidebar-trigger" />
+    <div class="sidebar">
+      <div class="sidebar__container">
+        <div class="profile">
+          <img class="profile__image" src="http://www.gravatar.com/avatar/00000000000000000000000000000000?s=100" width="100" height="100" alt="Yuka Sato">
+          <div class="profile__name">Yuka Sato</div>
+          <div class="profile__job">Web Enginner</div>
+          <div class="profile-actions">
+            <button class="profile-actions__btn">Follow</button>
+            <button class="profile-actions__btn">Message</button>
+          </div>
         </div>
-        <div class="hexa">
-          <span class="hexa__text">HEXAGON</span>
-        </div>
-        <div class="hexa">
-          <span class="hexa__text">HEXAGON</span>
-        </div>
-        <div class="hexa">
-          <span class="hexa__text">HEXAGON</span>
-        </div>
-        <div class="hexa">
-          <span class="hexa__text">HEXAGON</span>
-        </div>
-        <div class="hexa">
-          <span class="hexa__text">HEXAGON</span>
-        </div>
-        <div class="hexa">
-          <span class="hexa__text">HEXAGON</span>
-        </div>
-        <div class="hexa">
-          <span class="hexa__text">HEXAGON</span>
-        </div>
-      </ul>
+      </div>
     </div>
 
-    <div class="profile">
-      <label for="menu-trigger">
-        <div class="start-pointer">
-          <i class="icon">menu</i>
+    <div class="sidebar-caller">
+      <label for="sidebar-trigger">
+        <div class="sidebar-trigger__pointer">
+          <i class="icon sidebar-trigger__pointer-icon">more_horiz</i>
         </div>
       </label>
       <div class="container">
-        <h1 class="name">Yuka Sato</h1>
-        <h2 class="job">Web Enginner</h2>
+        <div class="hexa is_incline">
+          <div class="hexa-top"></div>
+          <div class="hexa-bottom"></div>
+        </div>
+        <div class="hexa is_incline">
+          <span class="hexa__text">HEXAGON</span>
+        </div>
+        <div class="hexa">
+          <span class="hexa__text">HEXAGON</span>
+        </div>
+        <div class="hexa">
+          <span class="hexa__text">HEXAGON</span>
+        </div>
+        <div class="hexa">
+          <span class="hexa__text">HEXAGON</span>
+        </div>
+        <div class="hexa">
+          <span class="hexa__text">HEXAGON</span>
+        </div>
+        <div class="hexa">
+          <span class="hexa__text">HEXAGON</span>
+        </div>
+        <div class="hexa">
+          <span class="hexa__text">HEXAGON</span>
+        </div>
       </div>
     </div>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
